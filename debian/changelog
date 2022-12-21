@@ -1,3 +1,34 @@
+python-zipp (1.0.0-6) unstable; urgency=medium
+
+  * Team upload.
+  * Drop old python3-contextlib2 build dependency
+  * Use dh-sequence-python3
+  * Bump policy version (no changes)
+  * Switch to autopkgtest-pkg-pybuild
+  * Add pybuild-plugin-pyproject
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Wed, 21 Dec 2022 23:06:15 +0100
+
+python-zipp (1.0.0-5) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove obsolete field Name from debian/upstream/metadata (already present in
+    machine-readable debian/copyright).
+  * Update standards version to 4.6.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Thu, 01 Dec 2022 11:31:53 +0000
+
+python-zipp (1.0.0-4) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/copyright: Bump my copyright year.
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 04 Jun 2022 16:07:18 -0400
+
 python-zipp (1.0.0-3) unstable; urgency=medium
 
   * Drop PyPy support.
