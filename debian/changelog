@@ -1,15 +1,3 @@
-python-zipp (1.0.0-3~bpo10+1pexip1) pexip; urgency=medium
-
-  * Prepare Pexip packaging
-
- -- Huw Jones <huw@pexip.com>  Mon, 22 Feb 2021 17:52:23 +0000
-
-python-zipp (1.0.0-3~bpo10+1) buster-backports; urgency=medium
-
-  * Rebuild for buster-backports.
-
- -- Paul Wise <pabs@debian.org>  Tue, 04 Aug 2020 11:45:18 +0800
-
 python-zipp (1.0.0-3) unstable; urgency=medium
 
   * Drop PyPy support.
@@ -18,6 +6,12 @@ python-zipp (1.0.0-3) unstable; urgency=medium
   * Set Rules-Requires-Root: no.
 
  -- Ondřej Nový <onovy@debian.org>  Fri, 05 Jun 2020 12:15:32 +0200
+
+python-zipp (1.0.0-3~bpo10+1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- Huw Jones <huw@pexip.com>  Mon, 22 Feb 2021 17:52:23 +0000
 
 python-zipp (1.0.0-2) unstable; urgency=medium
 
