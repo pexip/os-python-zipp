@@ -1,3 +1,9 @@
+python-zipp (1.0.0-3pexip2) pexip; urgency=medium
+
+  * No-change rebuild
+
+ -- Huw Jones <huw@pexip.com>  Tue, 13 Jun 2023 11:18:04 +0100
+
 python-zipp (1.0.0-3pexip1) pexip; urgency=medium
 
   * New upstream release
