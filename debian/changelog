@@ -1,3 +1,9 @@
+python-zipp (1.0.0-6pexip1) pexip-bookworm; urgency=medium
+
+  * Initial bookworm build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 16 Nov 2023 10:27:25 +0000
+
 python-zipp (1.0.0-6) unstable; urgency=medium
 
   * Team upload.
