@@ -2,17 +2,19 @@ Source: python-zipp
 Section: python
 Priority: optional
 Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Uploaders:
- Ondřej Nový <onovy@debian.org>,
+Uploaders: Martin <debacle@debian.org>
 Build-Depends:
  debhelper-compat (= 13),
  dh-sequence-python3,
  pybuild-plugin-pyproject,
  python3-all,
+ python3-jaraco.functools,
+ python3-jaraco.itertools,
  python3-more-itertools,
+ python3-pytest,
  python3-setuptools,
  python3-setuptools-scm,
-Standards-Version: 4.6.2
+Standards-Version: 4.7.0
 Vcs-Browser: https://salsa.debian.org/python-team/packages/python-zipp
 Vcs-Git: https://salsa.debian.org/python-team/packages/python-zipp.git
 Homepage: https://github.com/jaraco/zipp
@@ -24,6 +26,7 @@ Architecture: all
 Depends:
  ${misc:Depends},
  ${python3:Depends},
+Multi-Arch: foreign
 Description: pathlib-compatible Zipfile object wrapper - Python 3.x
  A backport of the Path object to older versions of Python.
  It's pathlib-compatible interface for zip files using zipfile object inside.
