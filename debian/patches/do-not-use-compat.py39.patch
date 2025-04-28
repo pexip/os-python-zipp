@@ -1,0 +1,58 @@
+From: Martin <debacle@debian.org>
+Date: Wed, 14 Aug 2024 17:10:50 +0100
+Subject: do not use obsolete compatibility file
+
+Origin: vendor
+Last-Update: 2024-08-30
+---
+ tests/compat/py38.py |  9 ---------
+ tests/compat/py39.py | 10 ----------
+ tests/test_path.py   |  2 +-
+ 3 files changed, 1 insertion(+), 20 deletions(-)
+ delete mode 100644 tests/compat/py38.py
+ delete mode 100644 tests/compat/py39.py
+
+diff --git a/tests/compat/py38.py b/tests/compat/py38.py
+deleted file mode 100644
+index 863bbcb..0000000
+--- a/tests/compat/py38.py
++++ /dev/null
+@@ -1,9 +0,0 @@
+-import sys
+-
+-if (3, 9) <= sys.version_info < (3, 11):  # pragma: no cover
+-    from importlib.abc import Traversable  # type: ignore[attr-defined, unused-ignore]
+-elif sys.version_info < (3, 9):  # pragma: no cover
+-    from importlib_resources.abc import Traversable
+-
+-
+-__all__ = ['Traversable']
+diff --git a/tests/compat/py39.py b/tests/compat/py39.py
+deleted file mode 100644
+index 6d52842..0000000
+--- a/tests/compat/py39.py
++++ /dev/null
+@@ -1,10 +0,0 @@
+-import sys
+-
+-from jaraco.test.cpython import from_test_support, try_import
+-
+-os_helper = try_import('os_helper') or from_test_support(
+-    'FakePath',
+-    'temp_dir',
+-)
+-
+-sys.modules[__name__ + '.os_helper'] = os_helper
+diff --git a/tests/test_path.py b/tests/test_path.py
+index c47f860..1d4b489 100644
+--- a/tests/test_path.py
++++ b/tests/test_path.py
+@@ -14,7 +14,7 @@ from jaraco.functools import compose
+ from zipp.compat.overlay import zipfile
+ 
+ from ._test_params import Invoked, parameterize
+-from .compat.py39.os_helper import FakePath, temp_dir  # type: ignore[import-not-found]
++from test.support.os_helper import FakePath, temp_dir
+ 
+ 
+ def _make_link(info: zipfile.ZipInfo):  # type: ignore[name-defined]
