@@ -1,3 +1,15 @@
+python-zipp (1.0.0-6+pexip24u4+deb12u1) pexip; urgency=medium
+
+  * New upstream release with security fix
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Wed, 10 Sep 2025 11:45:41 +0100
+
+python-zipp (1.0.0-6+deb12u1) bookworm; urgency=medium
+
+  * CVE-2024-5569
+
+ -- Moritz Mühlenhoff <jmm@debian.org>  Sun, 18 May 2025 00:34:40 +0200
+
 python-zipp (1.0.0-6+pexip24u3) pexip-bookworm; urgency=medium
 
   * New versioning scheme
